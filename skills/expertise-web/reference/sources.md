@@ -154,6 +154,79 @@ Not component libraries — inspiration galleries where you see WHAT to build, t
 
 ---
 
+## Motion Design & Animation
+
+Sources for making sites feel alive, premium, and unique. Split into: award galleries (see what the best looks like), animation tools (build it), and technique-specific inspiration.
+
+### Awwwards — The Gold Standard
+**URL:** https://www.awwwards.com/
+**What:** THE web design awards platform. Every site is rated by a jury on design, usability, creativity, and content. The "Site of the Day" is the daily benchmark for what premium web design looks like in motion. The real value: you can filter by technology (GSAP, WebGL, Three.js) to see what the best teams do with each tool.
+**Key filters:**
+- [/websites/gsap](https://www.awwwards.com/websites/gsap/) — GSAP ScrollTrigger showcases
+- [/websites/parallax](https://www.awwwards.com/websites/parallax/) — Parallax scroll effects
+- [/websites/three-js](https://www.awwwards.com/websites/three-js/) — 3D WebGL experiences
+**When to use:**
+- Setting the bar for animation quality → "this is what an Awwwards site feels like"
+- Studying scroll-driven animations → filter by GSAP or parallax
+- Justifying animation budget to a client → "here's the standard we're aiming for"
+**How to use:** Browse the nominees, not just the winners. Winners can be over-designed. Nominees often have the best balance of beauty and usability. Watch the sites on desktop — mobile versions strip most animations.
+
+### CSS Design Awards — Broader Creative Range
+**URL:** https://www.cssdesignawards.com/
+**What:** 200+ international judges. Less elitist than Awwwards — you'll find creative sites here that wouldn't make Awwwards' top picks but have excellent individual ideas worth stealing. Good for discovering mid-tier agencies doing original work.
+**When to use:**
+- Need a wider range of creative approaches → beyond the Awwwards aesthetic
+- Looking for motion ideas in specific industries → their category filter is solid
+**How to use:** Browse by category. Pay attention to sites that get high "creativity" scores but lower "design" scores — they often have the most original animation ideas.
+
+### Orpetron — Animation-Focused Awards
+**URL:** https://orpetron.com/
+**What:** Web design awards with a specific focus on animation and interaction. Where Awwwards judges holistically, Orpetron specifically celebrates sites with strong Framer Motion, GSAP, and Three.js work. They publish technical breakdowns of HOW effects are achieved.
+**When to use:**
+- Want to understand how a specific animation was built → their breakdowns are technical
+- Looking for Framer Motion / React-specific animation inspiration → their strongest area
+**How to use:** Read the analysis, not just the screenshots. The "how they did it" context is what makes this valuable.
+
+### GSAP — The Animation Engine (& its showcase)
+**URL:** https://gsap.com/
+**What:** Not just a library — the GSAP website itself is the best demo of what the tool can do. ScrollTrigger, timeline animations, SVG morphing, text splitting, parallax — all demonstrated on their own site. The showcase section features hundreds of production sites using GSAP.
+**When to use:**
+- Need scroll-driven animations beyond what Framer Motion can do → GSAP ScrollTrigger
+- Complex timeline sequences (multi-step animations) → GSAP's core strength
+- SVG animation or morphing → GSAP handles this better than any alternative
+**How to use:** Start with their showcase for inspiration, then read the docs for implementation. GSAP has a steeper learning curve than Framer Motion but more power for complex sequences. Use GSAP for scroll effects and page transitions; keep Framer Motion for component-level animations.
+
+### Motion (ex-Framer Motion) — The React Standard
+**URL:** https://motion.dev/
+**What:** The evolution of Framer Motion. Declarative, physics-based animations for React. 90% less code than GSAP for basic animations. Your current stack's animation engine. The docs site itself shows every animation pattern with live examples.
+**When to use:**
+- Any React component animation → entrance, exit, layout, gesture
+- `AnimatePresence` for mount/unmount transitions (tabs, modals, pages)
+- Spring physics for natural-feeling interactions
+- Scroll-linked animations (simpler cases — GSAP for complex)
+**How to use:** The docs ARE the inspiration. Browse `/docs/examples` for patterns. Everything in design-signature that uses `motion.div` or `AnimatePresence` comes from here.
+
+### Animista — CSS Animation Generator
+**URL:** https://animista.net/
+**What:** Visual CSS animation builder. Pick an effect category (entrances, exits, text, attention seekers), adjust parameters with sliders (duration, easing, delay), preview live, copy the CSS. No library needed — pure CSS output.
+**When to use:**
+- Need a quick entrance animation → faster than writing keyframes from scratch
+- Exploring easing curves → the visual preview helps you FEEL the difference
+- Static sites where you don't want Framer Motion → pure CSS animations
+**How to use:** Pick category → choose variation → adjust timing → copy CSS. Combine with design-signature's scroll reveal pattern (IntersectionObserver adds a class, Animista CSS handles the animation).
+
+### LottieFiles — After Effects Animations for Web
+**URL:** https://lottiefiles.com/
+**What:** Marketplace of animations created in After Effects, exported as lightweight JSON. Plays anywhere (React, vanilla JS, iOS, Android). The key insight: Lottie animations are VECTOR, so they scale perfectly and weigh almost nothing compared to GIFs or videos.
+**When to use:**
+- Animated illustrations (onboarding, empty states, success confirmations)
+- Loading animations that feel branded, not generic
+- Icon animations (hamburger → close, checkbox, send button)
+- Anywhere you'd use a GIF but want it crisp and lightweight
+**How to use:** Search the free library first. For custom animations, export from After Effects with the Bodymovin plugin. Use `lottie-react` or `@lottiefiles/react-lottie-player` in React.
+
+---
+
 ## Navigation Patterns
 
 ### Navbar Gallery — Navigation-Specific Designs
