@@ -1,10 +1,8 @@
-# Claude Web Design Skills
+# Claude Has Bad Taste
 
-Three [Claude Code](https://claude.com/claude-code) skills for building websites that don't look AI-generated.
+Three [Claude Code](https://claude.com/claude-code) skills that fix it.
 
-## The Problem
-
-Claude has bad taste. Left to its own devices, it produces the same dark-mode-with-gradient-accents, glassmorphism-everything, generic-font sites that scream "AI made this."
+Claude produces the same dark-mode-with-gradient-accents, glassmorphism-everything, generic-font sites that scream "AI made this."
 
 These skills fix that by:
 
