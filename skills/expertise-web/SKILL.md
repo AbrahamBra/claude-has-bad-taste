@@ -1,26 +1,57 @@
 ---
 name: expertise-web
-version: 1.0.0
-description: "Use on ANY web project — always active in background. Accumulated web expertise: battle-tested components, content architecture, navigation patterns, internal linking (maillage interne), SEO/GEO implementation, and technical patterns. Grows after every project. Triggers on: 'website', 'web app', 'landing page', 'components', 'navigation', 'maillage', 'content structure'."
+version: 2026.03.1
+last_updated: 2026-03-21
+projects: [gtm-deeptech, setting-live, izaia]
+description: "Use on ANY web project — always active in background. Abraham's accumulated web expertise: battle-tested components, content architecture, navigation patterns, maillage interne, SEO/GEO implementation, and technical patterns. Grows after every project. Triggers on: 'website', 'web app', 'landing page', 'components', 'navigation', 'maillage', 'content structure'."
 ---
 
 # Expertise Web
 
+## Relevance Check
+
+**Pas un projet web ?** Ignore ce skill entièrement.
+
+**Charge uniquement ce dont la tâche a besoin** — ne charge pas tout en bloc :
+
+| Si la tâche est… | Charge |
+|------------------|--------|
+| Construire un composant UI | `reference/components.md` + `reference/protocols.md` |
+| Planifier contenu / navigation | `reference/content-arch.md` |
+| Implémentation framework (Next.js, etc.) | `reference/technical.md` |
+| SEO / GEO / performance | `reference/geo-seo.md` |
+| Site statique vanilla | `reference/static-patterns.md` |
+| Chercher des références design | `reference/sources.md` |
+| Détection de gap ou harvest | `reference/protocols.md` uniquement |
+
+Si la tâche est purement conversationnelle (stratégie, pas de build), charge **aucun** fichier référence — les sections ci-dessous suffisent.
+
+**Bundles nommés** — raccourcis pour les workflows multi-modules fréquents :
+
+| Bundle | Modules | Quand |
+|--------|---------|-------|
+| `ui-harvest-loop` | `components.md` + `protocols.md` | Construction de composant UI + capture de leçon |
+| `design-calibration` | skill `design-eye` + `sources.md` | Démarrage visuel d'un projet (avant tout code) |
+| `seo-full` | `geo-seo.md` + skill `geo` | Session SEO/GEO complète |
+| `static-build` | `static-patterns.md` + `technical.md` | Site statique avec un minimum de JS |
+
+---
+
 ## Overview
 
-Accumulated web expertise from real projects. Always active on web development work. Contains battle-tested patterns for interactive components, content architecture, navigation, SEO/GEO, and performance.
+Abraham's accumulated web expertise from real projects. Always active on web development work. Contains battle-tested patterns for interactive components, content architecture, navigation, SEO/GEO, and performance.
 
 **Core principle:** This skill is a living document. Every project adds lessons. Examples compete — the best version wins. Nothing is theoretical; everything comes from production.
 
-## Companion Skills (Optional)
-These skills are not required. If you have equivalents, use them:
-- `design-eye` — FIRST, before any visual work. Produces the validated design direction.
-- A brainstorming/planning skill (author uses `superpowers`)
+## CRITICAL: Always Invoke These Skills Too
+
+- `design-eye` — FIRST, before any visual work on web projects. Check if `design-direction.md` exists; if not, invoke design-eye before proceeding with any visual decisions.
+- `superpowers` — always (brainstorming, plans, verification, debug)
 - `design-signature` — sister skill, always loaded alongside for visual decisions
-- A text humanization skill for visible copy (author uses `humanizer`)
-- A GEO/SEO optimization skill (author uses `geo`)
-- A copywriting skill for marketing text (author uses `copywriting`)
-- A content strategy skill for planning content (author uses `content-strategy`)
+- `humanizer` — when writing ANY visible text content
+- `geo` — when doing ANY SEO, structured data, AI visibility, or search optimization work (replaces seo-audit + ai-seo + schema-markup — `geo` covers all three)
+- `copywriting` — when writing marketing copy
+- `content-strategy` — when planning content architecture
 
 ## GATE: Design Direction Required
 
@@ -41,6 +72,7 @@ This gate does not apply to purely technical work (accessibility fixes, performa
 | **Focus visible everywhere** | `focus-visible:ring-2 focus-visible:ring-accent` on EVERY button, link, input | Keyboard users exist. They can't use your site without this. |
 | **Touch targets 48px** | `min-h-[48px]` on ALL buttons and inputs. Not just padding — explicit min-height | WCAG. Fat fingers. Mobile is 60%+ of traffic. |
 | **Twitter Card + OG** | Both `openGraph` AND `twitter` metadata on EVERY page | OG alone = suboptimal Twitter/X sharing. Always add both. |
+| **Gap check before improvising** | Before generating any component without an internal pattern → load `reference/protocols.md` and trigger Gap Detection. Never build blind. | Avoids accumulating one-off code that never becomes a reusable lesson. |
 
 > **Note:** `design-signature` inherits these standards. Its visual-specific non-negotiables (serif duo, grain, glassmorphism) are defined there, not here. This avoids duplication.
 
@@ -67,6 +99,7 @@ Detailed patterns, code, and lessons are organized in `reference/` files. Load t
 | `reference/geo-seo.md` | robots.txt, llms.txt, JSON-LD, hreflang, Security headers, Accessibility standards, Performance, SEO technical | SEO/GEO, security, accessibility, performance |
 | `reference/static-patterns.md` | Vanilla HTML, native `<details>`, mailto forms, scroll reveal, single-page landing, pricing tiers, blog patterns | Static sites without frameworks |
 | `reference/sources.md` | 21st.dev, Navbar Gallery, Component Gallery, Landing.love, Saaspo — URLs, usage rules, ownership | Discovering components or design references |
+| `reference/protocols.md` | Gap Detection (fires before building unknown components), Harvest (captures validated components into components.md) | Quand un composant est absent de components.md, OU quand l'utilisateur approuve ("c'est bon") |
 
 ## Launch Metrics Checklist
 
